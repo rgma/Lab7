@@ -26,26 +26,30 @@ export default function InputBar({ text, onChangeText, onSizeChange, onSendPress
 
 const styles = StyleSheet.create({
     inputBar: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        paddingHorizontal: 5,
-        paddingVertical: 3,
-        backgroundColor: '#f9f9f9' // Optional: adds visibility
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  paddingHorizontal: 0,
+  paddingVertical: 20,
+  width: '100%',
     },
+
     textBox: {
+        textAlign: 'center',
+        marginHorizontal: 10,
         borderRadius: 5,
         borderWidth: 1,
         borderColor: 'gray',
         flex: 1,
         fontSize: 16,
-        paddingHorizontal: 10,
+        paddingHorizontal: 300,
         backgroundColor: 'white'
     },
     sendButton: {
-        justifyContent: 'center',
-        alignItems: 'center',
         paddingLeft: 15,
-        marginLeft: 5,
+        paddingTop:5, 
+        paddingBottom:5, 
+        marginLeft: 15,
         paddingRight: 15,
         borderRadius: 5,
         backgroundColor: '#66db30'
